@@ -21,6 +21,10 @@ app.get('/news/:id', (req,res )=>{
     res.send(selectedNews)
 })
 
+app.get( '/news', (req, res) => {
+    res.send(news)
+})
+
 app.get('/catagories/:id', (req, res)=> {
     const categoryId= req.params.id
 
